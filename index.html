@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Angelica Jacob · Backend Developer</title>
+<meta name="description" content="Portfolio of Angelica DP. Jacob — backend developer and full-stack problem solver building web, mobile and data-driven applications." />
+
+<!-- Open Graph -->
+<meta property="og:title" content="Angelica Jacob · Backend Developer" />
+<meta property="og:description" content="Backend developer & full-stack builder. Web, mobile and data-driven applications." />
+<meta property="og:type" content="website" />
+
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%23b8a9e8'/%3E%3Cstop offset='1' stop-color='%23a8c8f0'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='64' height='64' rx='16' fill='url(%23g)'/%3E%3Ctext x='32' y='44' font-family='Arial' font-size='34' font-weight='700' fill='%23fff' text-anchor='middle'%3EA%3C/text%3E%3C/svg%3E" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,700;1,9..144,500&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+<!-- soft pastel cursor glow -->
+<div class="cursor-glow" aria-hidden="true"></div>
+
+<!-- decorative animated background -->
+<div class="aurora" aria-hidden="true">
+  <span class="blob blob--1"></span>
+  <span class="blob blob--2"></span>
+  <span class="blob blob--3"></span>
+  <span class="grain"></span>
+</div>
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="nav" id="nav">
+  <a class="brand" href="#hero" aria-label="Angelica Jacob, home">
+    <span class="brand__mark">AJ</span>
+    <span class="brand__text">Angelica&nbsp;Jacob</span>
+  </a>
+
+  <nav class="nav__links" aria-label="Primary">
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#certificates">Certificates</a>
+    <a href="#journey">Journey</a>
+    <a href="#contact">Contact</a>
+    <span class="nav__ink" aria-hidden="true"></span>
+  </nav>
+
+  <div class="nav__actions">
+    <button class="icon-btn" id="themeToggle" type="button" aria-label="Switch theme" aria-pressed="false">
+      <svg viewBox="0 0 24 24" class="icon-sun" aria-hidden="true"><circle cx="12" cy="12" r="4.2"/><g><line x1="12" y1="2.4" x2="12" y2="5"/><line x1="12" y1="19" x2="12" y2="21.6"/><line x1="2.4" y1="12" x2="5" y2="12"/><line x1="19" y1="12" x2="21.6" y2="12"/><line x1="5.2" y1="5.2" x2="7" y2="7"/><line x1="17" y1="17" x2="18.8" y2="18.8"/><line x1="18.8" y1="5.2" x2="17" y2="7"/><line x1="7" y1="17" x2="5.2" y2="18.8"/></g></svg>
+      <svg viewBox="0 0 24 24" class="icon-moon" aria-hidden="true"><path d="M20 14.2A8.2 8.2 0 0 1 9.8 4a8.4 8.4 0 1 0 10.2 10.2Z"/></svg>
+    </button>
+    <a class="btn btn--ghost btn--sm" href="assets/Angelica_Jacob_Resume.pdf" download>Résumé</a>
+    <button class="burger" id="burger" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="mobileMenu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<div class="mobile-menu" id="mobileMenu" hidden>
+  <a href="#about">About</a>
+  <a href="#skills">Skills</a>
+  <a href="#projects">Projects</a>
+  <a href="#certificates">Certificates</a>
+  <a href="#journey">Journey</a>
+  <a href="#contact">Contact</a>
+  <a href="assets/Angelica_Jacob_Resume.pdf" download>Download résumé</a>
+</div>
+
+<main id="main">
+
+  <!-- ═══════════ HERO ═══════════ -->
+  <section class="hero" id="hero">
+    <div class="hero__grid">
+      <div class="hero__copy reveal">
+        <p class="eyebrow"><span class="dot"></span> BSIT · Web &amp; Mobile Application Development</p>
+        <h1 class="hero__name">
+          Hi, I'm <span class="gradient-text">Angelica</span>.
+        </h1>
+        <p class="hero__role">
+          <span class="hero__role-static">I build</span>
+          <span class="type-wrap"><span id="typed" class="typed"></span><span class="caret" aria-hidden="true"></span></span>
+        </p>
+        <p class="hero__blurb">
+          A backend developer with a layout artist's eye. I turn messy ideas into efficient,
+          well-structured programs — from REST APIs and databases to pixel-tidy interfaces.
+        </p>
+
+        <div class="hero__cta">
+          <a class="btn btn--primary" href="#projects">View my work</a>
+          <a class="btn btn--ghost" href="#contact">Get in touch</a>
+        </div>
+
+        <ul class="hero__stats">
+          <li><strong data-count="10">0</strong><span>Public repos</span></li>
+          <li><strong data-count="3">0</strong><span>Languages</span></li>
+          <li><strong>∞</strong><span>Curiosity</span></li>
+        </ul>
+      </div>
+
+      <div class="hero__card reveal">
+        <div class="avatar-wrap">
+          <div class="avatar-ring" aria-hidden="true"></div>
+          <img class="avatar"
+               src="https://avatars.githubusercontent.com/u/204565026?v=4"
+               alt="Portrait of Angelica Jacob" width="260" height="260" loading="eager"
+               onerror="this.classList.add('avatar--fallback');this.removeAttribute('src');" />
+          <span class="avatar-initials" aria-hidden="true">AJ</span>
+        </div>
+        <div class="hero__card-body">
+          <h2>Angelica DP. Jacob</h2>
+          <p class="hero__handle">@aica02 · Web & Mobile Developer @ BulSU-Hagonoy Campus</p>
+          <div class="chip-row">
+            <span class="chip">Node.js</span>
+            <span class="chip">Express</span>
+            <span class="chip">MongoDB</span>
+            <span class="chip">Java</span>
+            <span class="chip">C++</span>
+          </div>
+          <a class="link-arrow" href="https://github.com/aica02" target="_blank" rel="noopener noreferrer">
+            Browse my GitHub
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"/></svg>
+          </a>
+        </div>
+        <div class="float-badge float-badge--a" aria-hidden="true">{ }</div>
+        <div class="float-badge float-badge--b" aria-hidden="true">◍</div>
+      </div>
+    </div>
+
+    <div class="scroll-hint" aria-hidden="true">
+      <span class="scroll-hint__line"></span> scroll
+    </div>
+  </section>
+
+  <!-- ═══════════ ABOUT ═══════════ -->
+  <section class="section" id="about">
+    <div class="section__head reveal">
+      <!-- <p class="section__kicker">01 — About</p> -->
+      <h2 class="section__title">Competent, curious, <em>always building</em>.</h2>
+    </div>
+
+    <div class="about">
+      <div class="about__prose reveal">
+        <p class="lead">
+          I use my analytical and creative skills to craft efficient, effective programs and services —
+          and I genuinely enjoy the process of getting there.
+        </p>
+        <p>
+          I'm a lifelong learner and tech enthusiast who is always poking at new tools and emerging
+          technologies. Right now that looks like shipping full-stack web apps with the MERN stack,
+          deepening my backend fundamentals, and keeping a designer's eye on the details.
+        </p>
+        <p>
+          Outside of code you'll find me testing new games, exploring new apps and software, or
+          reading with a warm drink nearby.
+        </p>
+        <div class="about__facts">
+          <div class="fact">
+            <span class="fact__label">Based in</span>
+            <span class="fact__value">Bulacan, Philippines</span>
+          </div>
+          <div class="fact">
+            <span class="fact__label">Focus</span>
+            <span class="fact__value">Backend &amp; full-stack web</span>
+          </div>
+          <div class="fact">
+            <span class="fact__label">Currently</span>
+            <span class="fact__value">BSIT · 2023–present</span>
+          </div>
+        </div>
+      </div>
+
+      <aside class="about__quote reveal">
+        <p class="quote-mark" aria-hidden="true">&ldquo;</p>
+        <blockquote>
+          Actively looking to explore new challenges and emerging technologies in a professional
+          environment.
+        </blockquote>
+        <div class="quote-foot">
+          <span class="quote-avatar">AJ</span>
+          <div>
+            <strong>Angelica Jacob</strong>
+            <span>Backend Developer</span>
+          </div>
+        </div>
+      </aside>
+    </div>
+  </section>
+
+  <!-- ═══════════ SKILLS ═══════════ -->
+  <section class="section" id="skills">
+    <div class="section__head reveal">
+      <!-- <p class="section__kicker">02 — Toolkit</p> -->
+      <h2 class="section__title">What I build <em>with</em>.</h2>
+    </div>
+
+    <div class="skills">
+      <div class="skill-row reveal">
+        <h3 class="skill-row__label">Languages</h3>
+        <div class="skill-row__tags">
+          <span class="chip">JavaScript (ES6+)</span>
+          <span class="chip">Java</span>
+          <span class="chip">C++</span>
+          <span class="chip">HTML5</span>
+          <span class="chip">CSS</span>
+        </div>
+      </div>
+
+      <div class="skill-row reveal">
+        <h3 class="skill-row__label">Web &amp; Backend</h3>
+        <div class="skill-row__tags">
+          <span class="chip">Node.js</span>
+          <span class="chip">Express</span>
+          <span class="chip">React.js</span>
+          <span class="chip">React Native</span>
+          <span class="chip">REST APIs</span>
+          <span class="chip">MERN</span>
+        </div>
+      </div>
+
+      <div class="skill-row reveal">
+        <h3 class="skill-row__label">Databases</h3>
+        <div class="skill-row__tags">
+          <span class="chip">MongoDB</span>
+          <span class="chip">MySQL</span>
+        </div>
+      </div>
+
+      <div class="skill-row reveal">
+        <h3 class="skill-row__label">Design &amp; Tools</h3>
+        <div class="skill-row__tags">
+          <span class="chip">Canva</span>
+          <span class="chip">Blender 3D</span>
+          <span class="chip">Microsoft Office</span>
+        </div>
+      </div>
+
+      <div class="skill-row reveal">
+        <h3 class="skill-row__label">AI &amp; Development</h3>
+        <div class="skill-row__tags">
+          <span class="chip">Opencode</span>
+          <span class="chip">ChatGPT</span>
+          <span class="chip">DeepSeek</span>
+          <span class="chip">Claude</span>
+          <span class="chip">AI-Assisted Coding</span>
+          <span class="chip">Prompt Engineering</span>
+          <span class="chip">Code Debugging</span>
+        </div>
+      </div>
+
+      <div class="skill-row reveal">
+        <h3 class="skill-row__label">Deployment</h3>
+        <div class="skill-row__tags">
+          <span class="chip">Netlify</span>
+          <span class="chip">Vercel</span>
+          <span class="chip">Render</span>
+        </div>
+      </div>
+
+      <div class="skill-row reveal">
+        <h3 class="skill-row__label">Soft Skills</h3>
+        <div class="skill-row__tags">
+          <span class="chip">Continuous learning</span>
+          <span class="chip">Analytical reasoning</span>
+          <span class="chip">Agile mindset</span>
+          <span class="chip">Technical communication</span>
+          <span class="chip">Collaboration</span>
+          <span class="chip">Self-management</span>
+        </div>
+      </div>
+
+      <div class="skill-row reveal">
+        <h3 class="skill-row__label">Spoken Languages</h3>
+        <div class="skill-row__tags">
+          <span class="chip">Filipino (Native)</span>
+          <span class="chip">English (B2)</span>
+          <span class="chip">Mandarin (A2)</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════ PROJECTS ═══════════ -->
+  <section class="section" id="projects">
+    <div class="section__head reveal">
+      <!-- <p class="section__kicker">03 — Selected work</p> -->
+      <h2 class="section__title">Things I've <em>shipped</em>.</h2>
+      <p class="section__sub">Pulled live from <a href="https://github.com/aica02" target="_blank" rel="noopener noreferrer">github.com/aica02</a>.</p>
+    </div>
+
+    <div class="filters reveal" id="filters" role="group" aria-label="Filter projects by category"></div>
+
+    <div class="projects" id="projectGrid" aria-live="polite"></div>
+
+    <p class="empty-state" id="emptyState" hidden>No projects in this category — try another filter.</p>
+
+    <div class="projects__more reveal">
+      <a class="btn btn--primary" href="https://github.com/aica02?tab=repositories" target="_blank" rel="noopener noreferrer">
+        See all repositories
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8"/></svg>
+      </a>
+    </div>
+  </section>
+
+  <!-- ═══════════ EDUCATION, HONORS & CERTIFICATIONS ═══════════ -->
+  <section class="section" id="certificates">
+    <div class="section__head reveal">
+      <!-- <p class="section__kicker">04 — Credentials</p> -->
+      <h2 class="section__title">Education, honors &amp; <em>certifications</em>.</h2>
+    </div>
+
+    <div class="edu">
+      <div class="edu__left">
+        <article class="cred-card reveal">
+          <p class="cred-card__label">education</p>
+          <h3 class="cred-card__title">Bulacan State University</h3>
+          <p class="cred-card__sub">BS Information Technology</p>
+          <p class="cred-card__muted">Major in Web and Mobile Application Development</p>
+          <p class="cred-card__date">2023 – 2027 (Expected)</p>
+        </article>
+
+        <article class="cred-card reveal">
+          <p class="cred-card__label">award</p>
+          <h3 class="cred-card__title">Dean's Lister</h3>
+          <p class="cred-card__sub">Bulacan State University</p>
+          <p class="cred-card__date">2024 – 2025</p>
+        </article>
+      </div>
+
+      <div class="edu__right">
+        <p class="cert-list__label">certifications</p>
+        <!-- rows are generated from the CERTIFICATES array in js/script.js;
+             each "Check" button opens that certificate image in the lightbox -->
+        <ul class="cert-list" id="certList"></ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════ JOURNEY ═══════════ -->
+  <!-- <section class="section" id="journey">
+    <div class="section__head reveal">
+      <!-- <p class="section__kicker">04 — Journey</p> 
+      <h2 class="section__title">Experience &amp; <em>training</em>.</h2>
+    </div>
+
+    <ol class="timeline">
+      <li class="timeline__item reveal">
+        <span class="timeline__dot" aria-hidden="true"></span>
+        <div class="timeline__card">
+          <span class="timeline__when">2023</span>
+          <h3>Work Immersion — DICT Region III</h3>
+          <p class="timeline__where">Iba-Carillo, Hagonoy, Bulacan</p>
+          <p>Built databases for municipalities in Bataan.</p>
+        </div>
+      </li>
+
+      <li class="timeline__item reveal">
+        <span class="timeline__dot" aria-hidden="true"></span>
+        <div class="timeline__card">
+          <span class="timeline__when">2023</span>
+          <h3>Introduction to HTML — DICT Region III</h3>
+          <p>Learned basic to advanced HTML structures and basic CSS applications.</p>
+        </div>
+      </li>
+
+      <li class="timeline__item reveal">
+        <span class="timeline__dot" aria-hidden="true"></span>
+        <div class="timeline__card">
+          <span class="timeline__when">2021 — 2023</span>
+          <h3>Technical Vocational &amp; Livelihood — Programming</h3>
+          <p class="timeline__where">Marcelo H. Del Pilar National High School</p>
+        </div>
+      </li>
+    </ol>
+  </section> 
+  -->
+
+  <!-- ═══════════ CONTACT ═══════════ -->
+  <section class="section contact" id="contact">
+    <div class="contact__card reveal">
+      <!-- <p class="section__kicker">05 — Say hello</p> -->
+      <h2 class="section__title">Let's build something <em>together</em>.</h2>
+      <p class="contact__blurb">
+        Open to internships, junior developer roles and interesting collaborations.
+        The fastest way to reach me is email.
+      </p>
+
+      <div class="contact__actions">
+        <button class="btn btn--primary" id="openContact" type="button">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2.5"/><path d="m4 7 8 6 8-6"/></svg>
+          angelica.jacob.dp@gmail.com
+        </button>
+        <button class="btn btn--ghost" id="copyEmail" type="button" data-email="angelica.jacob.dp@gmail.com">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="9" y="9" width="11" height="11" rx="2.2"/><path d="M15 5.5A2.5 2.5 0 0 0 12.5 3h-6A3.5 3.5 0 0 0 3 6.5v6A2.5 2.5 0 0 0 5.5 15"/></svg>
+          <span class="copy-label">Copy email</span>
+        </button>
+      </div>
+
+      <div class="contact__links">
+        <a href="https://github.com/aica02" target="_blank" rel="noopener noreferrer">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 0 0-3.16 19.49c.5.09.68-.22.68-.48v-1.7c-2.78.6-3.37-1.34-3.37-1.34-.45-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.89 1.53 2.34 1.09 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.56-1.11-4.56-4.94 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.65 0 0 .84-.27 2.75 1.02a9.5 9.5 0 0 1 5 0c1.91-1.29 2.75-1.02 2.75-1.02.55 1.38.2 2.4.1 2.65.64.7 1.03 1.59 1.03 2.68 0 3.84-2.34 4.68-4.57 4.93.36.31.68.92.68 1.85v2.74c0 .27.18.58.69.48A10 10 0 0 0 12 2Z"/></svg>
+          GitHub
+        </a>
+        <a href="assets/Angelica_Jacob_Resume.pdf" download>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v11m0 0 4-4m-4 4-4-4M4 17v2.5A1.5 1.5 0 0 0 5.5 21h13a1.5 1.5 0 0 0 1.5-1.5V17"/></svg>
+          Résumé (PDF)
+        </a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <p>Made by Angelica DP. Jacob · © <span id="year">2026</span></p>
+</footer>
+
+<!-- ═══════════ screenshot lightbox ═══════════ -->
+<div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Project screenshots" hidden>
+  <div class="lightbox__backdrop" aria-hidden="true"></div>
+  <div class="lightbox__panel">
+    <header class="lightbox__head">
+      <div>
+        <p class="lightbox__project" id="lbProject"></p>
+        <p class="lightbox__counter" id="lbCounter"></p>
+      </div>
+      <button class="lightbox__close" id="lbClose" type="button" aria-label="Close gallery">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>
+      </button>
+    </header>
+
+    <div class="lightbox__stage">
+      <button class="lightbox__nav lightbox__nav--prev" id="lbPrev" type="button" aria-label="Previous screenshot">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 5 8 12l7 7"/></svg>
+      </button>
+      <figure class="lightbox__figure">
+        <img id="lbImage" alt="" />
+      </figure>
+      <button class="lightbox__nav lightbox__nav--next" id="lbNext" type="button" aria-label="Next screenshot">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 5l7 7-7 7"/></svg>
+      </button>
+    </div>
+
+    <p class="lightbox__caption" id="lbCaption"></p>
+    <div class="lightbox__thumbs" id="lbThumbs"></div>
+  </div>
+</div>
+
+<!-- ═══════════ contact modal ═══════════ -->
+<div class="cmodal" id="contactModal" role="dialog" aria-modal="true" aria-labelledby="cmodalTitle" hidden>
+  <div class="cmodal__backdrop" aria-hidden="true"></div>
+  <div class="cmodal__panel">
+    <header class="cmodal__head">
+      <div>
+        <h2 class="cmodal__title" id="cmodalTitle">Send me a message</h2>
+        <p class="cmodal__sub">Fill this in and your mail app opens with it ready to send.</p>
+      </div>
+      <button class="cmodal__close" id="contactClose" type="button" aria-label="Close message form">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>
+      </button>
+    </header>
+
+    <form class="cmodal__form" id="contactForm" novalidate>
+      <div class="cmodal__row">
+        <div class="field">
+          <label class="field__label" for="cfName">Your name</label>
+          <input class="field__input" id="cfName" name="name" type="text" autocomplete="name" />
+        </div>
+        <div class="field">
+          <label class="field__label" for="cfEmail">Your email</label>
+          <input class="field__input" id="cfEmail" name="email" type="email" autocomplete="email" />
+        </div>
+      </div>
+
+      <div class="field">
+        <label class="field__label" for="cfMessage">Message</label>
+        <textarea class="field__input field__input--area" id="cfMessage" name="message" rows="7"></textarea>
+      </div>
+
+      <p class="cmodal__error" id="cfError" role="alert" hidden></p>
+
+      <div class="cmodal__actions">
+        <button class="btn btn--primary" id="cfSend" type="submit">Send message</button>
+        <span class="cmodal__hint">Opens your mail app</span>
+      </div>
+    </form>
+  </div>
+</div>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script src="js/script.js"></script>
+</body>
+</html>
